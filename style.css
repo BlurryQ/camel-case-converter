@@ -1,0 +1,37 @@
+* {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+input {
+    width: 365px;
+    border-radius: 10px;
+}
+
+.entry-header,
+.result-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    flex-basis: 500px;
+}
+
+#entry,
+#result {
+    margin: 20px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+
+.result {
+    font-size: 40px;
+}
