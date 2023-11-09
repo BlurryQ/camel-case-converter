@@ -1,6 +1,5 @@
 const allowedChars = [` `, '0', '1', '2', '3', '4', '5', '6', '7', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
-//const enteredData = document.getElementById(`entry`);
 const resultDisplay = document.getElementById(`result`);
 
 const input = document.getElementById(`input`)
@@ -30,7 +29,6 @@ function removeCamelCase(arr) {
 }
 
 function displayResults(string) {
-  //enteredData.textContent = string
   resultDisplay.textContent = ``
   string = getUseableString(string)
   results = removeCamelCase(string)

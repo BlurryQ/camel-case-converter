@@ -2,12 +2,40 @@
     background-color: black;
     color: white;
     font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-h1 {
+.heading {
     font-size: 50px;
     text-align: center;
+    margin-top: 3%;
 }
+.heading::after {
+    content: "camelCaseConverter";
+  /* animation-duration = number of keyframes * duration per keyframe */
+    animation: change-text 10s infinite;
+  }
+
+@keyframes change-text {
+    10% {
+        content: "camelCaseConverter";
+      }
+     20% {
+        content: "camel CaseConverter";
+      }
+      40% {
+          content: "camel Case Converter";
+      }
+      60% {
+          content: "Camel Case Converter";
+      }   
+      80% {
+        content: "CamelCase Converter";
+      }
+     100% {
+        content: "CamelCaseConverter";
+      }
+  }
 
 input {
     width: 365px;
@@ -35,3 +63,4 @@ input {
 .result {
     font-size: 40px;
 }
+

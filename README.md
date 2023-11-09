@@ -1,2 +1,3 @@
 # camel-case-remover
-A camel case remover for removing camel case from numerous Excel headings, returning them in an easy to read format
+About
+A camel case converter for converting camel case from numerous Excel headings, returning them in an easy to read format
