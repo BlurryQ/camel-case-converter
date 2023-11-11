@@ -8,26 +8,6 @@ input.addEventListener(`change`, () => {
   displayResults(string)
 })
 
-function removeCamelCase(arr) {
-  arr.forEach((string, index) => {
-    splitString = string.split(``);
-    filteredString = splitString.filter(item => item.toUpperCase() === item);
-    indexOfCapitals = []
-    lastIndex = 0;
-    filteredString.forEach(cap => {
-      indexOfCapitals.push(splitString.indexOf(cap, lastIndex))
-      lastIndex = indexOfCapitals.slice(-1)
-    });
-    indexOfCapitals.reverse()
-    indexOfCapitals.forEach(index => {
-      splitString.splice(index,0,` `);
-    });
-    splitString[0] = splitString[0].toUpperCase();
-    arr.splice(index, 1, splitString.join(``))
-  });
-  return arr;
-}
-
 function displayResults(string) {
   resultDisplay.textContent = ``
   string = getUseableString(string)
@@ -57,4 +37,24 @@ function removeUnusableChars(string) {
     }
   })
   return newSplitString.join(``);
+}
+
+function removeCamelCase(arr) {
+  arr.forEach((string, index) => {
+    splitString = string.split(``);
+    filteredString = splitString.filter(item => item.toUpperCase() === item);
+    indexOfCapitals = []
+    lastIndex = 0;
+    filteredString.forEach(cap => {
+      indexOfCapitals.push(splitString.indexOf(cap, lastIndex))
+      lastIndex = indexOfCapitals.slice(-1)
+    });
+    indexOfCapitals.reverse()
+    indexOfCapitals.forEach(index => {
+      splitString.splice(index,0,` `);
+    });
+    splitString[0] = splitString[0].toUpperCase();
+    arr.splice(index, 1, splitString.join(``))
+  });
+  return arr;
 }
