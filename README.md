@@ -4,7 +4,7 @@
 
 ## Summary
 
-**Hosted:** [Camel Case Converter Page](https://blurryq.github.io/camel-case-converter/)
+**Hosted:** [Camel Case Converter](https://blurryq.github.io/camel-case-converter/)
 
 A camel case converter designed to transform camel case strings from various Excel headings into a more readable format. Built to streamline the process of cleaning up large data sets, it helps convert complex database outputs into user-friendly documentation or reports.
 
